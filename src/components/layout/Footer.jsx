@@ -13,13 +13,13 @@ const Footer = () => {
           </div>
           
           <div className="flex space-x-6">
-            <a href="#" className="text-slate-300 hover:text-white transition-colors duration-200">
+            <a href="https://github.com/danixDe" className="text-slate-300 hover:text-white transition-colors duration-200">
               <FaGithub size={20} />
             </a>
-            <a href="#" className="text-slate-300 hover:text-white transition-colors duration-200">
+            <a href="" className="text-slate-300 hover:text-white transition-colors duration-200">
               <FaTwitter size={20} />
             </a>
-            <a href="#" className="text-slate-300 hover:text-white transition-colors duration-200">
+            <a href="https://linkedin.com/in/arvix17" className="text-slate-300 hover:text-white transition-colors duration-200">
               <FaLinkedin size={20} />
             </a>
           </div>

@@ -4,14 +4,13 @@ import MainLayout from './layouts/MainLayout'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
-//import Dashboard from './pages/Dashboard'
+import Dashboard from './pages/Dashboard'
 import CreateQuiz from './pages/CreateQuiz'
 import TakeQuiz from './pages/TakeQuiz'
 import QuizResults from './pages/QuizResults'
 import Leaderboard from './pages/Leaderboard'
-//import NotFound from './pages/NotFound'
+import NotFound from './pages/NotFound'
 
-// Protected route wrapper
 const ProtectedRoute = ({ children }) => {
   const { currentUser } = useAuth()
   
@@ -32,9 +31,10 @@ function App() {
        <Route path="quizzes/:quizId" element={<TakeQuiz />} /> 
         <Route path="results/:resultId" element={<QuizResults />} />
         <Route path="leaderboard" element={<Leaderboard />} />
-       {/**<Route path="dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} /> */} 
+       <Route path="dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="create-quiz" element={<ProtectedRoute><CreateQuiz /></ProtectedRoute>} />
         <Route path="edit-quiz/:quizId" element={<ProtectedRoute><CreateQuiz /></ProtectedRoute>} /> 
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   )

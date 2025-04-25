@@ -15,9 +15,9 @@ const Leaderboard = () => {
   
   const getMedalColor = (index) => {
     switch (index) {
-      case 0: return 'text-yellow-500'  // Gold
-      case 1: return 'text-slate-400'   // Silver
-      case 2: return 'text-amber-600'   // Bronze
+      case 0: return 'text-yellow-500'  
+      case 1: return 'text-slate-400' 
+      case 2: return 'text-amber-600'   
       default: return 'text-slate-300'
     }
   }
