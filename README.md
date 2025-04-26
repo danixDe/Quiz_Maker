@@ -14,7 +14,7 @@ An app to create, manage, and take quizzes.
 ## Setup Instructions
 
 1. Clone the repository
-   git clone https://github.com/danixDe/quiz-maker.git
+   git clone https://github.com/danixDe/Quiz_Maker.git
    cd quiz-maker
 
 2. Install dependencies
